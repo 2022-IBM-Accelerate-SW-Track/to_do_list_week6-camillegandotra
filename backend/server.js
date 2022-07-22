@@ -5,7 +5,7 @@ const express = require("express"),
 
 // AUTH---
 const basicAuth = require("express-basic-auth");
-const { authenticator, upsertUser, cookieAuth } = require("./authentication");
+var { authenticator, upsertUser, cookieAuth } = require("./authentication");
 const auth = basicAuth({
     authorizer: authenticator
 });
